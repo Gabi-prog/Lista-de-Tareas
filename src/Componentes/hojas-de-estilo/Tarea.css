@@ -27,3 +27,9 @@
   margin: 5px;
 
 }
+/* tarea completada */
+.tarea-contenedor.completada {
+    background-color: chocolate;
+    text-decoration: line-through;
+
+}

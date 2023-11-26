@@ -3,10 +3,10 @@ import React from "react";
 import '../Componentes/hojas-de-estilo/Tarea.css';
 import { AiOutlineDelete  } from "react-icons/ai";
 
-function Tarea ({ texto }){
+function Tarea ({ texto, completada }){
 
     return(
-      <div className="tarea-contenedor">
+      <div className={completada ? 'tarea-contenedor' : 'tarea-contenedor'}>
 				<div className="tarea-texto">
 					{texto}
 				</div>
