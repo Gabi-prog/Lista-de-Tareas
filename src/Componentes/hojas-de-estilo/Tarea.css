@@ -13,13 +13,13 @@
 }
 /* colores */
 .tarea-contenedor:nth-child(3n + 1) {
-    background-color: #ffda9e;
+    background-color: rgb(250, 143, 131);
 }
 .tarea-contenedor:nth-child(3n + 2) {
-    background-color: #fabd5c;
+    background-color: rgb(249, 130, 117);
 }
 .tarea-contenedor:nth-child(3n + 3) {
-    background-color: #faa111;
+    background-color: rgb(246, 118, 104);
 }
 
 /* texto */
