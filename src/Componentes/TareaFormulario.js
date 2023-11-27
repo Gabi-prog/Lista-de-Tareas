@@ -7,16 +7,20 @@ function TareaFormulario (){
 	const manejarCambio = e => {
 		setInput(e.target.value);
 		console.log(e.target.value);
-
 	}
 	const manejarEnvio = e => {
+		e.preventDefault();
+		console.log("Enviando formulario...");
 		const tareaNueva = {
 			id:" 4567",
-			texto:"Hola",
+			texto:input,
+			completada: false,
 		}
 	}
     return (
-      <form className="tarea-formulario">
+      <form 
+	  	className="tarea-formulario"
+	  	onSubmit={manejarEnvio}>
 				<input 
 					className="tarea-input"
 					type="text"
