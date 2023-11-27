@@ -3,7 +3,8 @@ import TareaFormulario from "./TareaFormulario";
 import '../Componentes/hojas-de-estilo/ListaDeTareas.css';
 import Tarea from "./Tarea";
 
-function ListaDeTareas (){
+function ListaDeTareas(){
+
 		const [tareas, setTareas] = useState( [] );
 		const agregarTarea = tarea => {			
 			if(tarea.texto.trim()){   //verifica que la tarea no este vacía
@@ -11,11 +12,11 @@ function ListaDeTareas (){
 				const tareasActualizadas = [tarea,...tareas];
 				setTareas(tareasActualizadas);				
 			}
-		}
+		};
 		const eliminarTarea = id =>{
 			const tareasActualizadas = tareas.filter(tarea =>tarea.id !==id);
 			setTareas(tareasActualizadas);
-		}
+		};
 		const completarTarea = id => {
 			const tareasActualizadas = tareas.map(tarea=>{
 				if(tarea.id === id){
@@ -25,7 +26,7 @@ function ListaDeTareas (){
 			})
 			setTareas(tareasActualizadas);
 
-		}
+		};
     return(
 			<>
 				<TareaFormulario onSubmit= { agregarTarea } />
