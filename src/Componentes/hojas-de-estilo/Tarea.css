@@ -40,7 +40,7 @@
 }
 /* tarea completada */
 .tarea-contenedor.completada {
-    background-color: chocolate;
+    background-color: salmon;
     text-decoration: line-through;
 
 }
