@@ -1,6 +1,5 @@
 
 import './App.css';
-import Tarea from './Componentes/Tarea';
 import ListaDeTareas from './Componentes/ListaDeTareas';
 
 function App() {
