@@ -19,6 +19,8 @@ function ListaDeTareas (){
 					{
 						tareas.map( (tarea) =>
 							<Tarea 
+							key= {tarea.id}// para que al actualizar no cambie el orden
+							id={tarea.id}
 							texto={tarea.texto}
 							completada={tarea.completada}
 							/>
