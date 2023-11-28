@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Lista de Tareas - Grupo H
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Integrantes
 
-## Available Scripts
+- Gabriela Peralta
+- Mariana Salgueiro
 
-In the project directory, you can run:
+Esta aplicación React, creada con create-react-app, se centra en la gestión de una lista de tareas.
 
-### `npm start`
+ Aquí se presenta una descripción de los archivos principales y su funcionalidad:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Archivos Principales
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### App.js
 
-### `npm test`
+Este archivo define la estructura principal de la aplicación, que incluye un título, un logo y la lista de tareas. Utiliza el **componente ListaDeTareas** para mostrar las tareas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### ListaDeTareas.js
 
-### `npm run build`
+El componente **ListaDeTareas** es responsable de manejar el estado de las tareas, agregar nuevas tareas, eliminarlas y marcarlas como completadas. Además, utiliza el **componente TareaFormulario** para permitir a los usuarios agregar nuevas tareas y renderiza la lista de tareas existentes mediante el **componente Tarea**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Tarea.js
+El **componente Tarea** representa una tarea individual en la lista. Permite marcar la tarea como completada y eliminarla. También utiliza iconos para mejorar la experiencia del usuario.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### TareaFormulario.js
+Este componente contiene un formulario que permite a los usuarios agregar nuevas tareas. Captura la entrada del usuario y la utiliza para crear una nueva tarea, que luego se envía al ****componente ListaDeTareas**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Estructura de Carpetas
 
-### `npm run eject`
+### Componentes: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contiene los componentes principales de la aplicación.
+### Hojas-de-estilo:
+ Contiene archivos de estilos para los componentes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Funcionalidad
+La aplicación permite a los usuarios agregar nuevas tareas a la lista.
+Cada tarea en la lista puede marcarse como completada o eliminarse.
+Las tareas completadas se presentan visualmente de manera diferente en la interfaz de usuario.
+La gestión del estado de las tareas se realiza principalmente en el componente ListaDeTareas, que utiliza el hook useState de React.
+Este diseño modular facilita el mantenimiento y la comprensión del código, proporcionando una experiencia de usuario sencilla para la gestión de tareas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La aplicación estará disponible en: [http://localhost:3000](http://localhost:3000) 
