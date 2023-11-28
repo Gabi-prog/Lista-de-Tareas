@@ -39,3 +39,5 @@ Cada tarea en la lista puede marcarse como completada o eliminarse.
 Las tareas completadas se presentan visualmente de manera diferente en la interfaz de usuario.
 La gestión del estado de las tareas se realiza principalmente en el componente ListaDeTareas, que utiliza el hook useState de React.
 Este diseño modular facilita el mantenimiento y la comprensión del código, proporcionando una experiencia de usuario sencilla para la gestión de tareas.
+
+La aplicación estará disponible en [http://localhost:3000.]
