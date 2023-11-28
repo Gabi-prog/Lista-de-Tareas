@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+Grupo H Lista de Tareas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1) Componente de Lista de Tareas (TaskList):
+El componente ListaDeTareas muestra la lista de tareas.Recibe funciones para gestionar eventos relacionados con las tareas (agregarTarea, eliminarTarea, completarTarea).Cada tarea se representa mediante el componente Tarea.
 
-## Available Scripts
+2) Componente de Tarea (TaskItem):
+El componente Tarea representa individualmente una tarea.Muestra el nombre de la tarea y un botón para completarla.Utiliza el estado local para gestionar la apariencia de la tare(tachado cuando está completada).
 
-In the project directory, you can run:
+3) Componente de Formulario (TaskForm):
+El componente TareaFormulario contiene un formulario para agregar nuevas tareas.
+Utiliza el estado local para gestionar la entrada del usuario y envía la nueva tarea a la lista principal.
 
-### `npm start`
+4) Estado con useState:
+Se utiliza el hook useState en el componente principal (ListaDeTareas) para gestionar el estado de la lista de tareas.
+Cada tarea es un objeto con propiedades como id, texto, y completada.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5) Efectos con useEffect:
+Se utiliza useEffect en el componente principal (ListaDeTareas) para cargar las tareas desde localStorage al montar el componente y para guardar las tareas en localStorage cada vez que se actualizan.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6) Interacción con el Usuario - Eventos:
+Eventos en el componente ListaDeTareas para interactuar con cada tarea (marcar como completada, eliminar, etc.).
+Eventos en el componente TareaFormulario para gestionar la entrada del usuario y agregar nuevas tareas a la lista.
