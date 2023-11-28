@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TareaFormulario from "./TareaFormulario";
 import Tarea from "./Tarea";
+import './hojas-de-estilo/TareaFormulario.css';
 
 function ListaDeTareas() {
   // Estado para almacenar las tareas
