@@ -1,22 +1,41 @@
-Grupo H Lista de Tareas
+# Lista de Tareas - Grupo H
 
-1) Componente de Lista de Tareas (TaskList):
-El componente ListaDeTareas muestra la lista de tareas.Recibe funciones para gestionar eventos relacionados con las tareas (agregarTarea, eliminarTarea, completarTarea).Cada tarea se representa mediante el componente Tarea.
+## Integrantes
 
-2) Componente de Tarea (TaskItem):
-El componente Tarea representa individualmente una tarea.Muestra el nombre de la tarea y un botón para completarla.Utiliza el estado local para gestionar la apariencia de la tare(tachado cuando está completada).
+- Gabriela Peralta
+- Mariana Salgueiro
 
-3) Componente de Formulario (TaskForm):
-El componente TareaFormulario contiene un formulario para agregar nuevas tareas.
-Utiliza el estado local para gestionar la entrada del usuario y envía la nueva tarea a la lista principal.
+Esta aplicación React, creada con create-react-app, se centra en la gestión de una lista de tareas.
 
-4) Estado con useState:
-Se utiliza el hook useState en el componente principal (ListaDeTareas) para gestionar el estado de la lista de tareas.
-Cada tarea es un objeto con propiedades como id, texto, y completada.
+ Aquí se presenta una descripción de los archivos principales y su funcionalidad:
 
-5) Efectos con useEffect:
-Se utiliza useEffect en el componente principal (ListaDeTareas) para cargar las tareas desde localStorage al montar el componente y para guardar las tareas en localStorage cada vez que se actualizan.
+### Archivos Principales
 
-6) Interacción con el Usuario - Eventos:
-Eventos en el componente ListaDeTareas para interactuar con cada tarea (marcar como completada, eliminar, etc.).
-Eventos en el componente TareaFormulario para gestionar la entrada del usuario y agregar nuevas tareas a la lista.
+#### App.js
+
+Este archivo define la estructura principal de la aplicación, que incluye un título, un logo y la lista de tareas. Utiliza el **componente ListaDeTareas** para mostrar las tareas.
+
+#### ListaDeTareas.js
+
+El componente **ListaDeTareas** es responsable de manejar el estado de las tareas, agregar nuevas tareas, eliminarlas y marcarlas como completadas. Además, utiliza el **componente TareaFormulario** para permitir a los usuarios agregar nuevas tareas y renderiza la lista de tareas existentes mediante el **componente Tarea**.
+
+#### Tarea.js
+El **componente Tarea** representa una tarea individual en la lista. Permite marcar la tarea como completada y eliminarla. También utiliza iconos para mejorar la experiencia del usuario.
+
+#### TareaFormulario.js
+Este componente contiene un formulario que permite a los usuarios agregar nuevas tareas. Captura la entrada del usuario y la utiliza para crear una nueva tarea, que luego se envía al ****componente ListaDeTareas**.
+
+## Estructura de Carpetas
+
+### Componentes: 
+
+Contiene los componentes principales de la aplicación.
+### Hojas-de-estilo:
+ Contiene archivos de estilos para los componentes.
+
+## Funcionalidad
+La aplicación permite a los usuarios agregar nuevas tareas a la lista.
+Cada tarea en la lista puede marcarse como completada o eliminarse.
+Las tareas completadas se presentan visualmente de manera diferente en la interfaz de usuario.
+La gestión del estado de las tareas se realiza principalmente en el componente ListaDeTareas, que utiliza el hook useState de React.
+Este diseño modular facilita el mantenimiento y la comprensión del código, proporcionando una experiencia de usuario sencilla para la gestión de tareas.
